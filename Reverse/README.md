@@ -51,7 +51,8 @@
 относящиеся к животным и составим следующую строку: cat-32900, dog-33900, fly-37673, and-31649, rat-35996.
 
 код
-```import string
+```
+import string
 def GETCRC(string):
     num=ord(string[0])
     num2=ord(string[1])
@@ -61,7 +62,8 @@ for i in string.ascii_lowercase:
     for x in string.ascii_lowercase:
         for t in string.ascii_lowercase:
             if GETCRC(i+x+t)==32900 or GETCRC(i+x+t)==33900 or GETCRC(i+x+t)==37673 or GETCRC(i+x+t)==31649 or GETCRC(i+x+t)==35996:
-                print(i+x+t, GETCRC(i+x+t)) ```
+                print(i+x+t, GETCRC(i+x+t)) 
+```
 вывод кода
 ```act 32900
 and 31649
